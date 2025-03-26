@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Force</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #516d85;
+            color: white;
+            text-align: center;
+            padding-top: 0em;
+        }
+        header img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100px;
+            height: auto;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+        .search-bar {
+            display: flex;
+        }
+        .search-bar input {
+            margin-right: 0.5em;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 60% 40%;
+            gap: 1em;
+            padding: 1em;
+        }
+        aside {
+            background-color: #e0e0e0;
+            padding: 1em;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        h1, h2 {
+            color: #004080;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Pictures/Logo.png" alt="Computer Force Logo">
+    </header>
+    <nav>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="register.html">Register</a>
+            <a href="about.html">About</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </nav>
+    <div class="container">
+        <main>
+            <h1>About Computer Force</h1>
+            <p>Computer Force is a brand-new start-up company designed to provide the first-class service to its customers. Based in Parramatta in Sydney, Computer Force provides top-class computing products at bargain prices, for sale throughout Australia.</p>
+            <p>Our goals are:</p>
+            <ul>
+                <li>To become Australia’s most well-known and respected hardware and software provider</li>
+                <li>To create a service-based organisation whose goal is to exceed customer's expectations</li>
+                <li>To provide a smooth, efficient, and transparent sales process</li>
+            </ul>
+            <p>You can contact us using the following methods:</p>
+            <p>
+                Address: 100 Main Road, Parramatta, NSW 20150<br>
+                Email: info@computerforce.com.au<br>
+                Phone: 02 4444 5555
+            </p>
+        </main>
+        <aside>
+            <h2>Purchases</h2>
+            <table>
+                <tr>
+                    <td>0 items.</td>
+                    <td>Cart sub-total: $0.</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button>Go to Checkout</button></td>
+                </tr>
+            </table>
+        </aside>
+    </div>
+    <footer>
+        <p>&copy; <script>document.write(new Date().getFullYear());</script> Camila Guerrero</p>
+    </footer>
+</body>
+</html>
