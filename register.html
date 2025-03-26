@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Force</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #516d85;
+            color: white;
+            text-align: center;
+            padding-top: 0em;
+        }
+        header img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100px;
+            height: auto;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+        .search-bar {
+            display: flex;
+        }
+        .search-bar input {
+            margin-right: 0.5em;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 60% 40%;
+            gap: 1em;
+            padding: 1em;
+        }
+        aside {
+            background-color: #e0e0e0;
+            padding: 1em;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        h1, h2 {
+            color: #004080;
+        }
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1em;
+        }
+        form label {
+            grid-column: 1 / 3;
+        }
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 0.5em;
+        }
+        form button {
+            grid-column: 1 / 3;
+            padding: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Pictures/Logo.png" alt="Computer Force Logo">
+    </header>
+    <nav>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="register.html">Register</a>
+            <a href="about.html">About</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </nav>
+    <div class="container">
+        <main>
+            <h1>Registration Form</h1>
+            <p>Please complete the following form to register for an account on our website.</p>
+            <form action="submit_registration.php" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="username">Username*</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password*</label>
+                <input type="password" id="password" name="password" required>
+                
+                <label for="confirm_password">Confirm Password*</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+                
+                <label for="first_name">First name*</label>
+                <input type="text" id="first_name" name="first_name" required>
+                
+                <label for="surname">Surname*</label>
+                <input type="text" id="surname" name="surname" required>
+                
+                <label for="gender">Gender*</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob">
+                
+                <label for="address">Address*</label>
+                <input type="text" id="address" name="address" required>
+                
+                <label for="suburb">Suburb*</label>
+                <input type="text" id="suburb" name="suburb" required>
+                
+                <label for="postcode">Postcode*</label>
+                <input type="text" id="postcode" name="postcode" required>
+                
+                <label for="state">State*</label>
+                <select id="state" name="state" required>
+                    <option value="ACT">ACT</option>
+                    <option value="NSW">NSW</option>
+                    <option value="NT">NT</option>
+                    <option value="QLD">QLD</option>
+                    <option value="SA">SA</option>
+                    <option value="TAS">TAS</option>
+                    <option value="VIC">VIC</option>
+                    <option value="WA">WA</option>
+                </select>
+                
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone">
+                
+                <button type="reset">Clear</button>
+                <button type="submit">Register</button>
+            </form>
+        </main>
+        <aside>
+            <h2>Purchases</h2>
+            <table>
+                <tr>
+                    <td>0 items.</td>
+                    <td>Cart sub-total: $0.</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button>Go to Checkout</button></td>
+                </tr>
+            </table>
+        </aside>
+    </div>
+    <footer>
+        <p>&copy; <script>document.write(new Date().getFullYear());</script> Camila Guerrero</p>
+    </footer>
+</body>
+</html>
